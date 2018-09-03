@@ -17,3 +17,31 @@ body {
     width: 100%;
     height: 100vh;
 }
+
+.contenedor {
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.elemento {
+    padding:  2rem;
+    background: linear-gradient(#FFB7B2, rgba(255, 183, 178, .5), rgba(255, 183, 178, .7));
+    box-shadow: 3px 3px 10px #333;
+    border-radius: 5px;
+    margin: 2vw;
+}
+
+.elemento:nth-child(1) {
+    width: 96vw;
+}
+
+.elemento:nth-child(2),
+.elemento:nth-child(3) {
+    width: 44vw;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+}
