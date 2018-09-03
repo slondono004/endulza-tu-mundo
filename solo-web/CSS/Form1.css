@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500');
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../IMG/Fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    width: 100%;
+    height: 100vh;
+}
+
+.contenedor-form {
+    position: absolute;
+    width: 500px;
+    padding: 25px 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(#BF99FF, rgba(191, 153, 255, .5), rgba(191, 153, 255, .7));
+    height:auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-form h2 {
+    margin-top: 0;
+    padding: 0;
+    padding: 8px;
+    color: #FFF;
+    font-weight: 300;
+    font-size: 35px;
+}
+
+.contenedor-form .formulario {
+    position: relative;
+    background: #FFF;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+
+.contenedor-form .formulario p {
+    color: #000;
+    position: relative;
+    widows: 100%;
+    height: auto;
+}
+
+.contenedor-form .formulario input {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    outline: none;
+    border: none;
+    padding: 6px 0px;
+    border-bottom: 1.5px solid #BF99FF;
+}
+
+.contenedor-form .formulario select {
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    overflow: hidden;
+    padding: 6px 0px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    appearance: none;
+    border: none;
+    border-bottom: 1.5px solid #BF99FF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    background: URL(../IMG/Flechita.png) no-repeat 100% center !important;
+}
+
+.contenedor-form .formulario select option {
+    font-size: 15px;
+}
+
+.contenedor-form .formulario button {
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #000;
+    background: #A2F7FF;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contenedor-form .formulario button:hover {
+    background: #FFB7B2;
+}
+
+.contenedor-form:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: -webkit-linear-gradient(left, #A2F7FF 0%, #A2F7FF 20%, #BF99FF 20%, #BF99FF 40%, #FFB7B2 40%, #FFB7B2 60%, #FFFFB5 60%, #FFFFB5 80%, #96FFB5 80%, #96FFB5 100%);
+    background: -moz-linear-gradient(left, #A2F7FF 0%, #A2F7FF 20%, #BF99FF 20%, #BF99FF 40%, #FFB7B2 40%, #FFB7B2 60%, #FFFFB5 60%, #FFFFB5 80%, #96FFB5 80%, #96FFB5 100%);
+    height: 5px;
+    border-radius: 5px 5px 0 0;
+}
+
+/*Responsive Web Desing */
+
+@media screen and (max-width:500px) {
+    .contenedor-form {
+        width: 100%;
+    }
+    .contenedor-form .formulario {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .contenedor-form .title {
+        font-size: 30px;
+    }
+}

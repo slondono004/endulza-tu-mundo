@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slider {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    animation: movimiento 40s infinite;
+}
+
+.slider .carga {
+    animation: movimiento 2s;
+}
+
+.slider .contenido {
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.slider .contenido .principal {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    initial-letter: 5px;
+    text-align: center;
+}
+
+.slider .contenido .principal h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.slider .contenido .principal p {
+    font-size: 20px;
+}
+
+@keyframes movimiento {
+    0% {
+        background-image: url(../IMG/img-1.jpg);
+    }
+    20% {
+        background-image: url(../IMG/img-1.jpg);
+    }
+    20.01% {
+        background-image: url(../IMG/img-2.jpg);
+    }
+    40% {
+        background-image: url(../IMG/img-2.jpg);
+    }
+    40.01% {
+        background-image: url(../IMG/img-3.jpg);
+    }
+    60% {
+        background-image: url(../IMG/img-3.jpg);
+    }
+    60.01% {
+        background-image: url(../IMG/img-4.jpg);
+    }
+    80% {
+        background-image: url(../IMG/img-4.jpg);
+    }
+    80.01% {
+        background-image: url(../IMG/img-5.jpg);
+    }
+    100% {
+        background-image: url(../IMG/img-5.jpg);
+    }
+}
