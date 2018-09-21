@@ -1,0 +1,16 @@
+.menu {
+    display:  flex;
+    justify-content:  center;
+}
+
+.menu>a {
+    color: white;
+    background: linear-gradient(#BF99FF, rgba(191, 153, 255, .5), rgba(191, 153, 255, .7));
+    padding:  1rem;
+    text-decoration: none;
+}
+
+.menu.rosado>a {
+    
+    background: linear-gradient(rgb(255, 153, 241), rgba(255, 153, 212, 0.5), rgba(255, 153, 221, 0.7));
+}

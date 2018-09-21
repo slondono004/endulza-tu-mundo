@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500');
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../IMG/fondo4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+}
+
+.iconos>.elemento {
+    display:  flex;
+    justify-content:  space-around;
+}
+
+.telefonos {
+    display:  flex;
+    flex-direction:  column;
+    align-items: center;
+}
+
+.iconos {
+    margin-top: 4rem;
+}
