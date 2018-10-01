@@ -44,6 +44,22 @@
         <servlet-name>registro</servlet-name>
         <servlet-class>registro</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>Molde</servlet-name>
+        <servlet-class>modelos.Molde</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Relleno</servlet-name>
+        <servlet-class>modelos.Relleno</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Tipodepastel</servlet-name>
+        <servlet-class>modelos.Tipodepastel</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Pedido</servlet-name>
+        <servlet-class>controlador.Pedido</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Inicio</servlet-name>
         <url-pattern>/Inicio</url-pattern>
@@ -87,6 +103,22 @@
     <servlet-mapping>
         <servlet-name>registro</servlet-name>
         <url-pattern>/registro</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Molde</servlet-name>
+        <url-pattern>/Molde</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Relleno</servlet-name>
+        <url-pattern>/Relleno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Tipodepastel</servlet-name>
+        <url-pattern>/Tipodepastel</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Pedido</servlet-name>
+        <url-pattern>/Pedido</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -49,6 +49,7 @@ body {
     background: #FFF;
     padding: 20px 30px;
     border-radius: 5px;
+    width: 390px;
 }
 
 .contenedor-form .formulario p {

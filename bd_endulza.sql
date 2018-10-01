@@ -50,6 +50,8 @@ INSERT INTO `endulza_tu_mundo`.`pedido` (`relleno`) VALUES ('vainilla');
 INSERT INTO `endulza_tu_mundo`.`pedido` (`relleno`) VALUES ('tres leches');
 INSERT INTO `endulza_tu_mundo`.`pedido` (`relleno`) VALUES ('lecherita');
 INSERT INTO `endulza_tu_mundo`.`pedido` (`relleno`) VALUES ('arequipe');
+INSERT INTO `endulza_tu_mundo`.`pedido` (`relleno`) VALUES ('mora');
+INSERT INTO `endulza_tu_mundo`.`pedido` (`relleno`) VALUES ('maracuya');
 
 CREATE TABLE `endulza_tu_mundo`.`molde` (
   `idmolde` INT NOT NULL AUTO_INCREMENT,
@@ -87,6 +89,20 @@ CREATE TABLE `endulza_tu_mundo`.`registro` (
   PRIMARY KEY (`idregistro`));
   
   INSERT INTO `endulza_tu_mundo`.`registro` (`nombre`, `apellido`, `correo`, `contrasena`) VALUES ('stefania', 'londoño', 'slondono004@gmail.com', 'stefania');
+  
+CREATE TABLE `endulza_tu_mundo`.`relleno` (
+  `idRelleno` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(45) NULL,
+  PRIMARY KEY (`idRelleno`));
+
+INSERT INTO `endulza_tu_mundo`.`relleno` (`nombre`) VALUES ('chocolate');
+INSERT INTO `endulza_tu_mundo`.`relleno` (`nombre`) VALUES ('fresa');
+INSERT INTO `endulza_tu_mundo`.`relleno` (`nombre`) VALUES ('mora');
+INSERT INTO `endulza_tu_mundo`.`relleno` (`nombre`) VALUES ('maracuya');
+INSERT INTO `endulza_tu_mundo`.`relleno` (`nombre`) VALUES ('lecherita');
+INSERT INTO `endulza_tu_mundo`.`relleno` (`nombre`) VALUES ('arequipe');
+
+
 
 
   
