@@ -57,7 +57,7 @@ body {
 .contenedor-form .formulario p {
     color: #000;
     position: relative;
-    widows: 100%;
+    widows: 100;
     height: auto;
 }
 

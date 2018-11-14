@@ -4,11 +4,7 @@
  */
 package modelos;
 
-/**
- *
- * @author Usuario
- */
-public class Porcion {
+public class Relleno {
+    public String nombre;
     public int id;
-    public String cantidad;
 }

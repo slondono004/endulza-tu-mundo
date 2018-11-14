@@ -50,6 +50,8 @@ INSERT INTO `endulza_tu_mundo`.`pedido` (`relleno`) VALUES ('vainilla');
 INSERT INTO `endulza_tu_mundo`.`pedido` (`relleno`) VALUES ('tres leches');
 INSERT INTO `endulza_tu_mundo`.`pedido` (`relleno`) VALUES ('lecherita');
 INSERT INTO `endulza_tu_mundo`.`pedido` (`relleno`) VALUES ('arequipe');
+INSERT INTO `endulza_tu_mundo`.`pedido` (`relleno`) VALUES ('mora');
+INSERT INTO `endulza_tu_mundo`.`pedido` (`relleno`) VALUES ('maracuya');
 
 CREATE TABLE `endulza_tu_mundo`.`molde` (
   `idmolde` INT NOT NULL AUTO_INCREMENT,
@@ -57,7 +59,7 @@ CREATE TABLE `endulza_tu_mundo`.`molde` (
   PRIMARY KEY (`idmolde`));
 
 INSERT INTO `endulza_tu_mundo`.`molde` (`tipo`) VALUES ('redondo');
-INSERT INTO `endulza_tu_mundo`.`molde` (`tipo`) VALUES ('triamgular');
+INSERT INTO `endulza_tu_mundo`.`molde` (`tipo`) VALUES ('triangular');
 INSERT INTO `endulza_tu_mundo`.`molde` (`tipo`) VALUES ('cuadrada');
 INSERT INTO `endulza_tu_mundo`.`molde` (`tipo`) VALUES ('espiral');
 
@@ -87,9 +89,45 @@ CREATE TABLE `endulza_tu_mundo`.`registro` (
   PRIMARY KEY (`idregistro`));
   
   INSERT INTO `endulza_tu_mundo`.`registro` (`nombre`, `apellido`, `correo`, `contrasena`) VALUES ('stefania', 'londoño', 'slondono004@gmail.com', 'stefania');
+  
+CREATE TABLE `endulza_tu_mundo`.`relleno` (
+  `idRelleno` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(45) NULL,
+  PRIMARY KEY (`idRelleno`));
+
+INSERT INTO `endulza_tu_mundo`.`relleno` (`nombre`) VALUES ('chocolate');
+INSERT INTO `endulza_tu_mundo`.`relleno` (`nombre`) VALUES ('fresa');
+INSERT INTO `endulza_tu_mundo`.`relleno` (`nombre`) VALUES ('mora');
+INSERT INTO `endulza_tu_mundo`.`relleno` (`nombre`) VALUES ('maracuya');
+INSERT INTO `endulza_tu_mundo`.`relleno` (`nombre`) VALUES ('lecherita');
+INSERT INTO `endulza_tu_mundo`.`relleno` (`nombre`) VALUES ('arequipe');
 
 
-  
-  
+CREATE TABLE `endulza_tu_mundo`.`precio` (
+  `idPrecio` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `precio` VARCHAR(45) NULL COMMENT '',
+  PRIMARY KEY (`idPrecio`)  COMMENT '');
 
+INSERT INTO `endulza_tu_mundo`.`precio` (`idPrecio`, `precio`) VALUES ('1', '10000');
+INSERT INTO `endulza_tu_mundo`.`precio` (`idPrecio`, `precio`) VALUES ('2', '20000');
+INSERT INTO `endulza_tu_mundo`.`precio` (`idPrecio`, `precio`) VALUES ('3', '30000');
+INSERT INTO `endulza_tu_mundo`.`precio` (`idPrecio`, `precio`) VALUES ('4', '40000');
+INSERT INTO `endulza_tu_mundo`.`precio` (`idPrecio`, `precio`) VALUES ('5', '50000');
   
+ CREATE TABLE `endulza_tu_mundo`.`codigos` (
+  `idCodigos` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `Codigos` INT NULL COMMENT '',
+  PRIMARY KEY (`idCodigos`)  COMMENT '');
+INSERT INTO `endulza_tu_mundo`.`codigos` (`idCodigos`, `Codigos`) VALUES ('1', '123');
+INSERT INTO `endulza_tu_mundo`.`codigos` (`idCodigos`, `Codigos`) VALUES ('2', '456');
+INSERT INTO `endulza_tu_mundo`.`codigos` (`idCodigos`, `Codigos`) VALUES ('3', '789');
+INSERT INTO `endulza_tu_mundo`.`codigos` (`idCodigos`, `Codigos`) VALUES ('4', '1234');
+INSERT INTO `endulza_tu_mundo`.`codigos` (`idCodigos`, `Codigos`) VALUES ('5', '5678');
+
+CREATE TABLE `endulza_tu_mundo`.`producto` (
+  `idproducto` INT NOT NULL AUTO_INCREMENT COMMENT '',
+  `sabor` VARCHAR(45) NULL COMMENT '',
+  `precio` INT NULL COMMENT '',
+  `codigos` VARCHAR(45) NULL COMMENT '',
+  PRIMARY KEY (`idproducto`)  COMMENT '');
+
